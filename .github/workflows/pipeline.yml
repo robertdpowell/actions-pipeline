@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest 
     steps:
       - uses: actions/checkout@v2
-      - runs: python hello.py
+      - run: python hello.py
 
   build:
     needs: [test]
