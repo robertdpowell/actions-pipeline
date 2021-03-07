@@ -1,7 +1,6 @@
-# This is a basic workflow to help you get started with Actions
-
 name: Python Pipeline
-on: Push
+
+on: push
 
 jobs:
   test:
@@ -9,7 +8,6 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - run: python hello.py
-
   build:
     needs: [test]
     runs-on: ubuntu-latest 
